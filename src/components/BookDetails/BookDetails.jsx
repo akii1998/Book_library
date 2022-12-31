@@ -27,7 +27,7 @@ const BookDetails = () => {
           const newBook = {
             description: description ? description.value : "No description found",
             title: title,
-            cover_img: covers ? `https://covers.openlibrary.org/b/id/${covers[0]}-L.jpg` : coverImg,
+            cover_img: covers ? `http://covers.openlibrary.org/b/id/${covers[0]}-L.jpg` : coverImg,
             subject_places: subject_places ? subject_places.join(", ") : "No subject places found",
             subject_times : subject_times ? subject_times.join(", ") : "No subject times found",
             subjects: subjects ? subjects.join(", ") : "No subjects found"
