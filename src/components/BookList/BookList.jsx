@@ -14,7 +14,7 @@ const BookList = () => {
       ...singleBook,
       // removing /works/ to get only id
       id: (singleBook.id).replace("/works/", ""),
-      cover_img: singleBook.cover_id ? `https://covers.openlibrary.org/b/id/${singleBook.cover_id}-L.jpg` : coverImg
+      cover_img: singleBook.cover_id ? `http://covers.openlibrary.org/b/id/${singleBook.cover_id}-L.jpg` : coverImg
     }
   });
 
@@ -28,7 +28,7 @@ const BookList = () => {
         </div>
         <div className='booklist-content grid'>
           {
-            booksWithCovers.slice(0, 20).map((item, index) => {
+            booksWithCovers.slice(0, 30).map((item, index) => {
               return (
                 <Book key = {index} {...item} />
               )
